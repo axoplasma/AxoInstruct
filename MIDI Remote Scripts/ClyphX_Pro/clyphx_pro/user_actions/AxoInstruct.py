@@ -13,7 +13,7 @@ class AxoInstruct(UserActionsBase):
         if os.path.isfile(args[1:-1]):
             xmlfile = args[1:-1]
         else:
-            xmlfile = 'c:/Users/audio/Documents/Axoplasma/INSTRUCT/instruct.xml'
+            xmlfile = 'c:/tmp/AxoInstruct/demo.xml'
         self.xmldata = ET.parse(xmlfile)
         self.canonical_parent.show_message('xml %s loaded' % xmlfile)
         self.canonical_parent.log_message('init_instruct: root is %s' % self.xmldata.getroot())

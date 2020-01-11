@@ -18,7 +18,9 @@ Create cue lists for live performances and send stage instructions to your mobil
 ## Setup
 1. Download the OSC User Actions (beta) from the [ClyphX Pro forum](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro) and copy them to the `user_actions` folder
 2. Copy the file `AxoInstruct.py`from this repository to the `user_actions` folder
-3. Edit the `Preferences.txt` of ClyphX Pro add settings for outgoing OSC communication:
+3. On your mobile device, have TouchOSC app installed and open the `AxoInstruct.touchosc` file on your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
+4. Find a folder for your cuelist XML file and remember the location. You will need the file path for setting up AxoInstruct in your Ableton Live set.
+5. Edit the `Preferences.txt` of ClyphX Pro add settings for outgoing OSC communication:
 ```
 #************************************* [OSC SETTINGS] **********************************
 # This setting determines the OSC port number that ClyphX Pro will receive OSC messages from.
@@ -27,6 +29,5 @@ INCOMING_OSC_PORT = 7005
 OUTGOING_OSC_PORT = 7006
 OSC_DEVICE_IP_ADDRESS = 192.168.0.255
 ```
-Note: In this case, the broadcast address x.x.x.255 of a local network is used. This way, the OSC messages can be received by any device in the 192.168.0.x address range
-4. On your mobile device, have TouchOSC app installed and open the `AxoInstruct.touchosc` file on your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
-5. Find a folder for your cuelist XML file and remember the location. You will need the file path for setting up AxoInstruct in your Ableton Live set.
+Notes:
+In this case, the broadcast address x.x.x.255 of a local network is used. This way, the OSC messages can be received by any device in the 192.168.0.x address range

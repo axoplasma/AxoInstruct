@@ -1,0 +1,119 @@
+VERSION = 1.0.8
+
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+#********************************** [GENERAL SETTINGS] *********************************
+
+# This setting defines an Action List to trigger when a set is loaded.
+
+# The possible settings are NONE or an Action List to trigger.
+
+STARTUP_ACTIONS = none
+
+
+# This setting determines whether or not a colored border should be shown around the
+# selected Clip Slot.
+
+# The possible settings are TRUE or FALSE.
+
+NAVIGATION_HIGHLIGHT = true
+
+
+# This setting changes the behavior of launching the selected Clip Slot so that (if a Clip
+# is recording in the Clip Slot and Global Quantization is not set to None) the length
+# of the recording Clip will automatically be determined by the Global Quantization
+# value.
+
+# The possible settings are TRUE or FALSE.
+
+CLIP_RECORD_LENGTH_SET_BY_GLOBAL_QUANTIZATION = FALSE
+
+
+# This setting determines whether or not X-Clips on muted Tracks will be processed.
+
+# The possible settings are TRUE or FALSE.
+
+PROCESS_XCLIPS_IF_TRACK_MUTED = true
+
+
+# This setting determines whether lengths/positions can be specified in either bars
+# or beats.  For example, CLIP LOOP 4 would mean 4 beats while CLIP LOOP 4B would mean
+# 4 bars.
+
+# The possible settings are TRUE or FALSE.
+
+ALLOW_BAR_AND_BEAT_SPECS = TRUE
+
+
+# This setting determines whether or not to search within Racks when operating upon
+# Devices by name (like DEV("My Device")).  When set to False, Racks will not be searched.
+
+# The possible settings are TRUE or FALSE.
+
+INCLUDE_NESTED_DEVS_IN_NAME_SEARCH = TRUE
+
+
+# This setting determines the threshold for X-Control values.  Values above this value
+# will be considered on values and values below it will be considered off values.
+
+# The possible settings are any whole number in the range of 1 - 127.
+
+XCONTROL_ON_THRESHOLD = 33
+
+
+#********************************** [SNAPSHOT SETTINGS] *******************************
+
+# This setting determines the number of parameters that Snapshots will be allowed to
+# store.  If the limit is exceeded, you'll receive an error message.
+
+# NOTE:  Please use caution when adjusting this setting. Recalling Snapshots that have
+# stored 1000s of parameters can cause delays and momentary freezing of Live's GUI.
+
+# The possible settings are any whole number.
+
+SNAPSHOT_PARAMETER_LIMIT = 1000
+
+
+# This setting determines whether or not Track Arm and Monitoring states will be stored
+# when using the MIX+ or MIX- Modifiers.
+
+# The possible settings are TRUE or FALSE.
+
+STORE_EXTENDED_MIX_SETTINGS = false
+
+
+#********************************** [SCHEDULER SETTINGS] *******************************
+
+# This setting determines whether high resolution scheduling should be used for non-synced
+# value ramping.  High resolution allows for smoother ramping, but is more taxing on the CPU.
+
+# The possible settings are TRUE or FALSE.
+
+USE_HIGH_RES_SCHEDULER_FOR_RAMPING = TRUE
+
+
+# This setting determines whether Actions scheduled to occur after a WAITS Action will
+# become unscheduled when playback stops.  When FALSE, scheduled Actions will simply be
+# paused until playback starts up again.
+
+UNSCHEDULE_WAITS_ON_PLAYBACK_STOP = TRUE
+
+
+#************************************* OSC SETTINGS] **********************************
+
+# This setting determines the OSC port number that ClyphX Pro will receive OSC messages from.
+
+# The possible settings are any OSC port number.
+
+INCOMING_OSC_PORT = 7005
+OUTGOING_OSC_PORT = 7006
+OSC_DEVICE_IP_ADDRESS = 192.168.0.255

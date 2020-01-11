@@ -2,7 +2,7 @@
 Multi-user cue lists and stage instructions with Ableton Live, ClyphX Pro and OSC
 
 Create cue lists for live performances and send stage instructions to your mobile devices.
-![](images/AxoInstructOverview_01.png)
+![](images/AxoInstructOverview_02.jpg)
 
 ## Supports
 * Multiple users/artists
@@ -32,3 +32,11 @@ OSC_DEVICE_IP_ADDRESS = 192.168.0.255
 ```
 Notes:
 In this case, the broadcast address x.x.x.255 of a local network is used. This way, the OSC messages can be received by any device in the 192.168.0.x address range
+
+## Session overview
+![](images/AxoInstructOverview_01.png)
+
+## Max4Live rack for midi note triggering
+Ableton Drum Rack and the ClyphX Pro `Note Trigger Handler` Max4Live Ensemble
+![](images/AxoInstructM4L_Rack_01.png)
+![](images/AxoInstructM4L_Clip_01.png)

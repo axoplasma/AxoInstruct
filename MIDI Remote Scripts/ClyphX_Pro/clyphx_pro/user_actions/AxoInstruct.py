@@ -17,13 +17,11 @@ class AxoInstruct(UserActionsBase):
         self.add_global_action('instruct', self.instruct)
             
     def init_instruct(self, _, args):
-        self.canonical_parent.show_message('file: %s' % file)
         if os.path.isfile(args[1:-1]):
             xmlfile = args[1:-1]
         else:
             xmlfile = 'c:/tmp/AxoInstruct/demo.xml'
         self.xmldata = ET.parse(xmlfile)
-        self.canonical_parent.show_message('xml %s loaded' % xmlfile)
         self.canonical_parent.log_message('init_instruct: root is %s' % self.xmldata.getroot())
         self.textfields = ['title', 'now', 'n_now', 'next', 'n_next', 'later', 'n_later']
         self.categories = ['music', 'lighting', 'visuals']
@@ -42,7 +40,6 @@ class AxoInstruct(UserActionsBase):
         
     def instruct(self, _, args):
         subargs = args.split()
-        self.canonical_parent.show_message('subarg1: %s, subarg2: %s' % (subargs[0], subargs[1]))
         if int(subargs[1]) >= 0:
             if (subargs[0] == "m" or subargs[0] == "music"):
                 category = 'music'

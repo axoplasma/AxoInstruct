@@ -10,12 +10,33 @@
         </instruction>
         <instruction category="music">
             <target target_id="m" name="Matthias">
-                <cue id="1">empty</cue>
+                <cue id="1">F (low) - Enc 1+3:0; 2:1/8 - Send A+C med</cue>
+                <cue id="2">Bb</cue>
+                <cue id="3">F/Ab/F/Eb</cue>
+                <cue id="4">Bb</cue>
+                <cue id="5">F/Ab/F/Eb</cue>
+                <cue id="6">Break - Silence</cue>
+                <cue id="7">F/Ab/F/Eb</cue>
+                <cue id="8">Bb</cue>
+                <cue id="9">F/Ab/F/Eb</cue>
+                <cue id="10">Bb</cue>
+                <cue id="11">F/Ab/F/Eb</cue>
+                <cue id="12">F</cue>
+                <cue id="13">Break - F ... Eb</cue>
+                <cue id="14">Bb</cue>
+                <cue id="15">F/Ab/F/Eb</cue>
+                <cue id="16">Bb</cue>
+                <cue id="17">F/Ab/F/Eb</cue>
+                <cue id="18">F</cue>
+                <cue id="19">Outro - Silence / Bb/F Enc 1/2/3</cue>
             </target>
         </instruction>
         <instruction category="visuals">
             <target target_id="j" name="Joachim">
-                 <cue id="1">empty</cue>
+                 <cue id="1">Page 11: Launch Sequencer</cue>
+                 <cue id="2">Cam 1</cue>
+                 <cue id="3">Polka dots</cue>
+                 <cue id="4">Page 12: Antiport</cue>
             </target>
         </instruction>    
     </song>
@@ -30,40 +51,32 @@
         </instruction>
         <instruction category="music">
             <target target_id="m" name="Matthias">
-                <cue id="1">Seq: Enc 1: 1/3; 2+3: 0; Send A+C med</cue>
-                <cue id="2">Add Distortion</cue>
-                <cue id="3">Add Delay; Sweep Down</cue>
+                <cue id="1">Intro (8x)</cue>
+                <cue id="2">Intro (7/8)</cue>
+                <cue id="3">Intro (8/8)</cue>
+                <cue id="4">Main (2x)</cue>
+                <cue id="5">Low (2x)</cue>
+                <cue id="6">Main (2x)</cue>
+                <cue id="7">Silence (2x)</cue>
+                <cue id="8">Intro (2x)</cue>
+                <cue id="9">Intro (1st notes only)</cue>
+                <cue id="10">Silence (2x)</cue>
+                <cue id="11">Main w/o Bass (1/5)</cue>
+                <cue id="12">Main w/o Bass (2/5)</cue>
+                <cue id="13">Main w/o Bass (3/5)</cue>
+                <cue id="14">Main w/o Bass (4/5)</cue>
+                <cue id="15">Main w/o Bass (5/5)</cue>
+                <cue id="16">Mid D (short)</cue>
+                <cue id="17">Outro - Silence</cue>
             </target>
         </instruction>
         <instruction category="visuals">
             <target target_id="j" name="Joachim">
-                <cue id="1">empty</cue>
+                <cue id="1">Page 12: Antiport</cue>
+                <cue id="2">Add rotation</cue>
+                <cue id="3">Page 13: Roll-over</cue>
             </target>
         </instruction>    
     </song>
 
-    <song song_id="dummy" title="Dummy">
-        <instruction category="lighting">
-            <target target_id="m" name="Matthias">
-                <cue id="1">Page 13: Roll-over</cue>
-                <cue id="2">Fader 6 up</cue>
-                <cue id="3">Page 14: Helix</cue>
-            </target>
-        </instruction>
-        <instruction category="music">
-            <target target_id="m" name="Matthias">
-                <cue id="1">D (only high) - Track: Send A+C med</cue>
-                <cue id="2">D (high/low)</cue>
-                <cue id="3">D/A/G/D (high/low)</cue>
-                <cue id="4">D (high/low)</cue>
-                <cue id="5">D/A/G/D (high/low)</cue>
-                <cue id="6">D (high/low)</cue>
-            </target>
-        </instruction>
-        <instruction category="visuals">
-            <target target_id="j" name="Joachim">
-                <cue id="1">empty</cue>
-            </target>
-        </instruction>    
-    </song>
 </collection>

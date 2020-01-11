@@ -1,3 +1,11 @@
+# AxoInstruct
+# Multi-user cue lists and stage instructions with Ableton Live, ClyphX Pro and OSC
+# (c) 2019-2020, Matthias Farian /Axoplasma (https://github.com/axoplasma/AxoInstruct)
+# 
+# AxoInstruct is licensed under the Mozilla Public License 2.0
+# https://github.com/axoplasma/AxoInstruct/blob/master/LICENSE
+# 
+
 from ClyphX_Pro.clyphx_pro.UserActionsBase import UserActionsBase
 import xml.etree.ElementTree as ET 
 import os.path

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<collection>
+    <song song_id="demo1" title="Demo Song 1">
+        <instruction category="lighting">
+            <target target_id="m" name="Matthias">
+                <cue id="1">Page 11: Launch Sequencer</cue>
+                <cue id="2">Fader 6 up</cue>
+                <cue id="3">Page 12: Antiport</cue>
+            </target>
+        </instruction>
+        <instruction category="music">
+            <target target_id="m" name="Matthias">
+                <cue id="1">empty</cue>
+            </target>
+        </instruction>
+        <instruction category="visuals">
+            <target target_id="j" name="Joachim">
+                 <cue id="1">empty</cue>
+            </target>
+        </instruction>    
+    </song>
+
+    <song song_id="demo2" title="Demo Song">
+        <instruction category="lighting">
+            <target target_id="m" name="Matthias">
+                <cue id="1">Page 12: Antiport</cue>
+                <cue id="2">Fader 6 up</cue>
+                <cue id="3">Page 13: Roll-over</cue>
+            </target>
+        </instruction>
+        <instruction category="music">
+            <target target_id="m" name="Matthias">
+                <cue id="1">Seq: Enc 1: 1/3; 2+3: 0; Send A+C med</cue>
+                <cue id="2">Add Distortion</cue>
+                <cue id="3">Add Delay; Sweep Down</cue>
+            </target>
+        </instruction>
+        <instruction category="visuals">
+            <target target_id="j" name="Joachim">
+                <cue id="1">empty</cue>
+            </target>
+        </instruction>    
+    </song>
+
+    <song song_id="dummy" title="Dummy">
+        <instruction category="lighting">
+            <target target_id="m" name="Matthias">
+                <cue id="1">Page 13: Roll-over</cue>
+                <cue id="2">Fader 6 up</cue>
+                <cue id="3">Page 14: Helix</cue>
+            </target>
+        </instruction>
+        <instruction category="music">
+            <target target_id="m" name="Matthias">
+                <cue id="1">D (only high) - Track: Send A+C med</cue>
+                <cue id="2">D (high/low)</cue>
+                <cue id="3">D/A/G/D (high/low)</cue>
+                <cue id="4">D (high/low)</cue>
+                <cue id="5">D/A/G/D (high/low)</cue>
+                <cue id="6">D (high/low)</cue>
+            </target>
+        </instruction>
+        <instruction category="visuals">
+            <target target_id="j" name="Joachim">
+                <cue id="1">empty</cue>
+            </target>
+        </instruction>    
+    </song>
+</collection>

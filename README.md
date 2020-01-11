@@ -10,7 +10,15 @@ Supports:
 * Display of current cue and outlook on what's coming next
 
 Requires:
-* Ableton Live
-* ClyphX Pro with OSC User Actions (beta)
-* Max4Live
-* TouchOSC (or comparable OSC-enabled software)
+* Ableton Live [1]
+* ClyphX Pro [2] with OSC User Actions (beta) [3]
+* Max4Live [4]
+* TouchOSC (or comparable OSC-enabled software) [5]
+
+
+Links:
+[1]: https://www.ableton.com/en/live/
+[2]: https://isotonikstudios.com/product/clyphx-pro/
+[3]: http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro
+[4]: https://www.ableton.com/en/live/max-for-live/
+[5]: https://hexler.net/products/touchosc

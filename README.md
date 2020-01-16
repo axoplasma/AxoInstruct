@@ -24,6 +24,7 @@ Create cue lists for live performances and send stage instructions to your mobil
 3. On your mobile device, have TouchOSC app installed and open the `AxoInstruct.touchosc` file on your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
 4. Find a folder for your cuelist XML file and remember the location. You will need the file path for setting up AxoInstruct in your Ableton Live set.
 5. Edit the `Preferences.txt` of ClyphX Pro add settings for outgoing OSC communication:
+
 ```
 #************************************* [OSC SETTINGS] **********************************
 # This setting determines the OSC port number that ClyphX Pro will receive OSC messages from.
@@ -32,6 +33,7 @@ INCOMING_OSC_PORT = 7005
 OUTGOING_OSC_PORT = 7006
 OSC_DEVICE_IP_ADDRESS = 192.168.0.255
 ```
+
 Notes:
 In this case, the broadcast address x.x.x.255 of a local network is used. This way, the OSC messages can be received by any device in the 192.168.0.x address range
 
@@ -44,11 +46,13 @@ If you omit the file path in the clip's name, AXOInstruct will use the script wh
 ### Switching between songs
 Each XML cue list is capable of holding as many songs as you need. But there can always be only one song selected. The `prep` actions lets you switch between songs.
 Since my Live sets are usually built around the session view, I have clips for that: e.g. `[] prep demo1` where "demo1" denotes a song's `song_id` from the XML cue list file:
+
 ```
 <?xml version="1.0"?>
 <collection>
     <song song_id="demo1" title="Demo Song 1">
-´´´
+```
+
 The prep action parses the XML file and automatically displays the first cue for all categories (music/lighting/visuals). You don't have to manually select the first cue.
 
 ### Selecting cues

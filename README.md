@@ -104,7 +104,7 @@ Since my Live sets are usually built around the session view, I have clips for t
 The prep action parses the XML file and automatically displays the first cue for all categories (music/lighting/visuals). You don't have to manually select the first cue.
 
 ### Selecting cues
-Example action: `[] instruct v 2` -- where "v" denotes the category visuals, "l" as in lighting and "m" as in music. "2" displays the third cue as well as the two subsequent cues. If you choose a number that is larger than the specified numbers of cues (like 1337), the display will show `--`.
+Example action: `[] instruct v 2` -- where "v" denotes the category visuals, "l" as in lighting and "m" as in music. "2" displays the second cue as well as the two subsequent cues. If you choose a number that is larger than the specified numbers of cues (like 1337), the display will show `--`.
 
 ![](images/AxoInstruct_Social01.png)
 

@@ -13,17 +13,32 @@ Create cue lists for live performances and send stage instructions to your mobil
 * Display of current cue and outlook on what's coming next
 
 ## Requires
-* [Ableton Live](https://www.ableton.com/en/live/)
-* [ClyphX Pro](https://isotonikstudios.com/product/clyphx-pro/) with [OSC User Actions (beta)](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro)
-* [Max4Live](https://www.ableton.com/en/live/max-for-live/) -- for midi note triggers (optional)
+* [Ableton Live](https://www.ableton.com/en/live/) -- Version 9.7 or higher
+* [ClyphX Pro](https://isotonikstudios.com/product/clyphx-pro/) Version 1.1.8 or higher
+* [ClyphX Pro OSC User Actions (beta)](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro) -- Download from the official ClyphX Pro forum
+* [Max4Live](https://www.ableton.com/en/live/max-for-live/) or Ableton Live Suite -- (optional, for midi note triggers)
 * [TouchOSC](https://hexler.net/products/touchosc) or comparable OSC-enabled software
 
-## Setup
-1. Download the OSC User Actions (beta) from the [ClyphX Pro forum](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro) and copy them to the `user_actions` folder. If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
-2. Copy the file `AxoInstruct.py`from this repository to the `user_actions` folder. If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
-3. On your mobile device, have TouchOSC app installed and open the `AxoInstruct.touchosc` file on your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
-4. Find a folder for your cuelist XML file and remember the location. You will need the file path for setting up AxoInstruct in your Ableton Live set.
-5. Edit the `Preferences.txt` of ClyphX Pro add settings for outgoing OSC communication:
+## Setup and installation
+### Step 1
+* Download or clone this repository
+* Download the OSC User Actions (beta) from the [ClyphX Pro forum](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro)
+* On your mobile device: Download TouchOSC from your favourite App Store
+
+### Step 2
+#### AxoInstruct files
+* Copy the file `AxoInstruct.py`from this repository to the `user_actions` folder of your ClyphX Pro installation. If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
+
+#### ClyphX Pro OSC files
+* Before you begin, make sure that you are using ClyphX Pro Version 1.1.8 or higher.
+* Copy the OSC User Actions Python files into the `user_actions` folder of your ClyphX Pro installation. If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
+
+If you have successfully completed this step, the `user_actions` folder should contain the highlighted files:
+![](images/AxoInstruct_ClyphXProUserActionsFolderContent.png)
+
+* Edit the `Preferences.txt` of ClyphX Pro installation add settings for outgoing OSC communication. On a Windows machine the file is located here: `c:\Users\[YourUserName]\nativeKONTROL\ClyphX_Pro\Preferences.txt`.
+
+Snippet of my `Preferences.txt` file and the settings I am using:
 
 ```
 #************************************* [OSC SETTINGS] **********************************
@@ -34,8 +49,29 @@ OUTGOING_OSC_PORT = 7006
 OSC_DEVICE_IP_ADDRESS = 192.168.0.255
 ```
 
-Notes:
-In this case, the broadcast address x.x.x.255 of a local network is used. This way, the OSC messages can be received by any device in the 192.168.0.x address range
+OSC is based on IP network communication rather than Midi. ClyphX Pro needs the following settings or send and receive OSC messages.
+
+`INCOMING_OSC_PORT = 7005` ClyphX Pro will listen on this port for incoming OSC messages. This port number has to match the outgoing port number of the OSC apps on your mobile devices.
+`OUTGOING_OSC_PORT = 7006` Clyphx Pro will send OSC messages to this port number on other devices. Make sure you have different numbers for incoming and outgoing ports. On your mobile device, configure the incoming port with the same number.
+`OSC_DEVICE_IP_ADDRESS = 192.168.0.255` This is the IP address of your mobile device, the address, ClyphX Pro will send all the OSC messages to.
+
+Remarks:
+* The IP address setting is strongly depending on your network infrastructure. In my case, my computer running Ableton Live has the IP address 192.168.0.105. My mobile device has the IP address 192.168.0.201. Both starting with 192.168.0 means they are in the same network.
+* This is important: both your computer and your mobile device have to directly "see" each other. They have to be in the same network.
+* If you want to send OSC messages to only one single device you can specify the receiver's address explicitly, like `OSC_DEVICE_IP_ADDRESS = 192.168.0.201`.
+* AxoInstruct was designed serving multiple users in parallel. For this reason `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` is set to the broadcast address of your network. This means that every computer or mobile device in the 192.168.0.1 - 192.168.0.254 address range will receive the messages.
+* Static IP addresses for all your devices are advisable in some situations to have better control over your used addresses.
+* If this is too much network gibberish for you, ask a tech-savvy nerd in your circle of friends. :-)
+
+
+### TouchOSC on your mobile device
+If you use TouchOSC on Android or iOS, transfer the `AxoInstruct.touchosc` file to your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
+
+### AxoInstruct XML Cuelist
+Find a folder for your cuelist XML file and remember the location. You will need the file path for setting up AxoInstruct in your Ableton Live set.
+
+#### 
+
 
 ## Usage
 ### Initialization

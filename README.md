@@ -71,10 +71,10 @@ The basic AxoInstruct GUI will look like this:
 
 The TouchOSC settings have configured to the corresponding OSC network settings of ClyphX Pro (see above). The incoming port number of TouchOSC has to match the outgoing port number on your computer and vice versa.
 
-TouchOSC on iOS:
+TouchOSC on iOS: \
 ![](images/AxoInstruct_TouchOSC_iOS1.png) ![](images/AxoInstruct_TouchOSC_iOS2.png) ![](images/AxoInstruct_TouchOSC_iOS3.png)
 
-TouchOSC on Android:
+TouchOSC on Android: \
 ![](images/AxoInstruct_TouchOSC_Android1.png) ![](images/AxoInstruct_TouchOSC_Android2.png) ![](images/AxoInstruct_TouchOSC_Android3.png)
 
 ### AxoInstruct XML Cuelist

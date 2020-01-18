@@ -57,7 +57,7 @@ OSC is based on IP network communication rather than Midi. ClyphX Pro needs the 
 
 * `INCOMING_OSC_PORT = 7005` ClyphX Pro will listen on this port for incoming OSC messages. This port number has to match the outgoing port number of the OSC apps on your mobile devices.
 * `OUTGOING_OSC_PORT = 7006` Clyphx Pro will send OSC messages to this port number on other devices. Make sure you have different numbers for incoming and outgoing ports. \ On your mobile device, configure the incoming port with the same number.
-* `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` This is the IP address of your mobile device, the address, ClyphX Pro will send all the OSC messages to.
+* `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` Usually, this is the IP address of your mobile device, the address, ClyphX Pro will send all the OSC messages to. In this case however it's the broadcast address of an entire network. Please read the remarks below.
 
 Remarks:
 * The IP address setting is strongly depending on your network infrastructure. In my case, my computer running Ableton Live has the IP address 192.168.0.105. My mobile device has the IP address 192.168.0.201. Both starting with 192.168.0 means they are in the same network.
@@ -104,7 +104,7 @@ Since my Live sets are usually built around the session view, I have clips for t
 The prep action parses the XML file and automatically displays the first cue for all categories (music/lighting/visuals). You don't have to manually select the first cue.
 
 ### Selecting cues
-Example action: `[] instruct v 2` -- where "v" denotes the category visuals, "l" as in lighting and "m" as in music. "2" displays the second cue as well as the two subsequent cues. If you choose a number that is larger than the specified numbers of cues (like 1337), the display will show `--`.
+Example action: `[] instruct v 2` -- where "v" denotes the category visuals, "l" as in lighting and "m" as in music. "2" displays the second cue as well as the two subsequent cues. If you choose a number that is larger than the specified number of cues (like 1337), the display will show `--`.
 
 ![](images/AxoInstruct_Social01.png)
 

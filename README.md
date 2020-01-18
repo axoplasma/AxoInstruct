@@ -1,5 +1,5 @@
 # AxoInstruct
-Multi-user cue lists and stage instructions with Ableton Live, ClyphX Pro and OSC
+Multi-user cue lists and stage instructions with Ableton Live, ClyphX Pro and OSC \
 Create cue lists for live performances and send stage instructions to your mobile devices.
 
 ![](images/AxoInstruct_Social01.png)
@@ -27,16 +27,19 @@ Create cue lists for live performances and send stage instructions to your mobil
 
 ### Step 2
 #### AxoInstruct files
-Copy the file `AxoInstruct.py`from this repository to the `user_actions` folder of your ClyphX Pro installation. If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
+Copy the file `AxoInstruct.py`from this repository to the `user_actions` folder of your ClyphX Pro installation. \
+If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
 
 #### ClyphX Pro OSC files
-Before you begin, make sure that you are using ClyphX Pro Version 1.1.8 or higher.
-Copy the OSC User Actions Python files into the `user_actions` folder of your ClyphX Pro installation. If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
+Before you begin, make sure that you are using ClyphX Pro Version 1.1.8 or higher. \
+Copy the OSC User Actions Python files into the `user_actions` folder of your ClyphX Pro installation. \
+If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
 
-If you have successfully completed this step, the `user_actions` folder should contain the highlighted files:
+If you have successfully completed this step, the `user_actions` folder should contain the highlighted files: \
 ![](images/AxoInstruct_ClyphXProUserActionsFolderContent.png)
 
-Edit the `Preferences.txt` of ClyphX Pro installation add settings for outgoing OSC communication. On a Windows machine the file is located here: `c:\Users\[YourUserName]\nativeKONTROL\ClyphX_Pro\Preferences.txt`.
+Edit the `Preferences.txt` of ClyphX Pro installation add settings for outgoing OSC communication. \
+On a Windows machine the file is located here: `c:\Users\[YourUserName]\nativeKONTROL\ClyphX_Pro\Preferences.txt`.
 
 Snippet of my `Preferences.txt` file and the settings I am using:
 
@@ -52,7 +55,7 @@ OSC_DEVICE_IP_ADDRESS = 192.168.0.255
 OSC is based on IP network communication rather than Midi. ClyphX Pro needs the following settings or send and receive OSC messages.
 
 * `INCOMING_OSC_PORT = 7005` ClyphX Pro will listen on this port for incoming OSC messages. This port number has to match the outgoing port number of the OSC apps on your mobile devices.
-* `OUTGOING_OSC_PORT = 7006` Clyphx Pro will send OSC messages to this port number on other devices. Make sure you have different numbers for incoming and outgoing ports. On your mobile device, configure the incoming port with the same number.
+* `OUTGOING_OSC_PORT = 7006` Clyphx Pro will send OSC messages to this port number on other devices. Make sure you have different numbers for incoming and outgoing ports. \ On your mobile device, configure the incoming port with the same number.
 * `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` This is the IP address of your mobile device, the address, ClyphX Pro will send all the OSC messages to.
 
 Remarks:
@@ -66,7 +69,7 @@ Remarks:
 
 ### TouchOSC on your mobile device
 If you use TouchOSC on Android or iOS, transfer the `AxoInstruct.touchosc` file to your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
-The basic AxoInstruct GUI will look like this:
+\ \ The basic AxoInstruct GUI will look like this: \
 ![](images/AxoInstruct_TouchOSC_GUI1.png)
 
 The TouchOSC settings have configured to the corresponding OSC network settings of ClyphX Pro (see above). The incoming port number of TouchOSC has to match the outgoing port number on your computer and vice versa.

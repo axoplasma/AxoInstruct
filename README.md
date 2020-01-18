@@ -20,12 +20,12 @@ Create cue lists for live performances and send stage instructions to your mobil
 * [TouchOSC](https://hexler.net/products/touchosc) or comparable OSC-enabled software
 
 ## Setup and installation
-### Step 1
+### Step 1: Downloads
 * Download or clone this repository
 * Download the OSC User Actions (beta) from the [ClyphX Pro forum](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro)
 * On your mobile device: Download TouchOSC from your favourite App Store
 
-### Step 2
+### Step 2: Files and folders
 #### AxoInstruct files
 Copy the file `AxoInstruct.py`from this repository to the `user_actions` folder of your ClyphX Pro installation. \
 If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Live 10 Suite\Resources\MIDI Remote Scripts\ClyphX_Pro\clyphx_pro\user_actions`
@@ -38,6 +38,7 @@ If you have Live 10 on a Windows system, this will be `C:\ProgramData\Ableton\Li
 If you have successfully completed this step, the `user_actions` folder should contain the highlighted files: \
 ![](images/AxoInstruct_ClyphXProUserActionsFolderContent.png)
 
+### Step 3: Network settings
 Edit the `Preferences.txt` of ClyphX Pro installation add settings for outgoing OSC communication. \
 On a Windows machine the file is located here: `c:\Users\[YourUserName]\nativeKONTROL\ClyphX_Pro\Preferences.txt`.
 
@@ -67,7 +68,7 @@ Remarks:
 * If this is too much network gibberish for you, ask a tech-savvy nerd in your circle of friends. :-)
 
 
-### TouchOSC on your mobile device
+### Step 4: TouchOSC on your mobile device
 If you use TouchOSC on Android or iOS, transfer the `AxoInstruct.touchosc` file to your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
 \ \ The basic AxoInstruct GUI will look like this: \
 ![](images/AxoInstruct_TouchOSC_GUI1.png)
@@ -80,10 +81,8 @@ TouchOSC on iOS: \
 TouchOSC on Android: \
 ![](images/AxoInstruct_TouchOSC_Android1.png) ![](images/AxoInstruct_TouchOSC_Android2.png) ![](images/AxoInstruct_TouchOSC_Android3.png)
 
-### AxoInstruct XML Cuelist
+#### Step 5: AxoInstruct XML Cuelist
 Find a folder for your cuelist XML file and remember the location. You will need the file path for setting up AxoInstruct in your Ableton Live set.
-
-#### 
 
 
 ## Usage

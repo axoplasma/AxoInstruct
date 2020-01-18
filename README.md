@@ -60,7 +60,7 @@ OSC is based on IP network communication rather than Midi. ClyphX Pro needs the 
 * `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` Usually, this is the IP address of your mobile device, the address, ClyphX Pro will send all the OSC messages to. In this case however it's the broadcast address of an entire network. Please read the remarks below.
 
 Remarks:
-* The IP address setting is strongly depending on your network infrastructure. In my case, my computer running Ableton Live has the IP address 192.168.0.105. My mobile device has the IP address 192.168.0.201. Both starting with 192.168.0 means they are in the same network.
+* The IP address setting is strongly depending on your network infrastructure. In my case, my computer running Ableton Live has the IP address 192.168.0.105. My mobile device has the IP address 192.168.0.201. Both starting with 192.168.0 (and given a network mask 255.255.255.0) means they are in the same network.
 * This is important: both your computer and your mobile device have to directly "see" each other. They have to be in the same network.
 * If you want to send OSC messages to only one single device you can specify the receiver's address explicitly, like `OSC_DEVICE_IP_ADDRESS = 192.168.0.201`.
 * AxoInstruct was designed serving multiple users in parallel. For this reason `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` is set to the broadcast address of your network. This means that every computer or mobile device in the 192.168.0.1 - 192.168.0.254 address range will receive the messages.

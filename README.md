@@ -56,7 +56,7 @@ OSC_DEVICE_IP_ADDRESS = 192.168.0.255
 OSC is based on IP network communication rather than Midi. ClyphX Pro needs the following settings or send and receive OSC messages.
 
 * `INCOMING_OSC_PORT = 7005` ClyphX Pro will listen on this port for incoming OSC messages. This port number has to match the outgoing port number of the OSC apps on your mobile devices.
-* `OUTGOING_OSC_PORT = 7006` Clyphx Pro will send OSC messages to this port number on other devices. Make sure you have different numbers for incoming and outgoing ports. \ On your mobile device, configure the incoming port with the same number.
+* `OUTGOING_OSC_PORT = 7006` Clyphx Pro will send OSC messages to this port number on other devices. Make sure you have different numbers for incoming and outgoing ports. On your mobile device, configure the incoming port with the same number.
 * `OSC_DEVICE_IP_ADDRESS = 192.168.0.255` Usually, this is the IP address of your mobile device, the address, ClyphX Pro will send all the OSC messages to. In this case however it's the broadcast address of an entire network. Please read the remarks below.
 
 Remarks:
@@ -69,8 +69,8 @@ Remarks:
 
 
 ### Step 4: TouchOSC on your mobile device
-If you use TouchOSC on Android or iOS, transfer the `AxoInstruct.touchosc` file to your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc)
-\ \ The basic AxoInstruct GUI will look like this: \
+If you use TouchOSC on Android or iOS, transfer the `AxoInstruct.touchosc` file to your device. More information on TouchOSC installation and template file transfer, refer to the [TouchOSC homepage](https://hexler.net/products/touchosc) \
+The basic AxoInstruct GUI will look like this: \
 ![](images/AxoInstruct_TouchOSC_GUI1.png)
 
 The TouchOSC settings have configured to the corresponding OSC network settings of ClyphX Pro (see above). The incoming port number of TouchOSC has to match the outgoing port number on your computer and vice versa.

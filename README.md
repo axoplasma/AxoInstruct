@@ -13,7 +13,7 @@ Create cue lists for live performances and send stage instructions to your mobil
 * Display of current cue and outlook on what's coming next
 
 ## Requires
-* [Ableton Live](https://www.ableton.com/en/live/) -- Version 9.7 or higher
+* [Ableton Live](https://www.ableton.com/en/live/) -- Version 9.7+ or 10.x (Note: Live 11 is not supported by ClyphX Pro yet)
 * [ClyphX Pro](https://isotonikstudios.com/product/clyphx-pro/) Version 1.1.8 or higher
 * [ClyphX Pro OSC User Actions (beta)](http://forum.nativekontrol.com/thread/3620/beta-osc-output-clyphx-pro) -- Download from the official ClyphX Pro forum
 * [Max4Live](https://www.ableton.com/en/live/max-for-live/) or Ableton Live Suite -- (optional, for midi note triggers)
